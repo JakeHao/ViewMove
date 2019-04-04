@@ -1,19 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<FrameLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:orientation="vertical"
   tools:context=".MainActivity">
 
-  <TextView
+  <com.jake.viewmove.DragView1
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@color/colorAccent"/>
+
+  <com.jake.viewmove.DragView2
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="100dp"
+    android:background="#011009"/>
+
+  <com.jake.viewmove.DragView3
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="200dp"
+    android:background="#015019"/>
+
+  <FrameLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Hello World!"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    android:layout_marginTop="300dp">
 
-</android.support.constraint.ConstraintLayout>
+    <com.jake.viewmove.DragView4
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:background="#886538"/>
+  </FrameLayout>
+
+  <com.jake.viewmove.DragView5
+    android:id="@+id/dragView5"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="400dp"
+    android:background="#018838"/>
+
+  <com.jake.viewmove.DragView6
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimaryDark"
+      android:text="拖动我"/>
+
+  </com.jake.viewmove.DragView6>
+  >
+
+
+</FrameLayout>
